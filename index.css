@@ -1,0 +1,531 @@
+/* Reset default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background: url('images/roasted-coffee-beans.jpg') no-repeat center center/cover;
+  color: black;
+  text-align: left;
+  padding: 0 20px; /* Reduced padding */
+}
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 100px; /* Reduced padding at the top */
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.cta-button {
+  background: burlywood;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-image {
+  position: relative;
+  max-width: 100%;
+  text-align: right;
+}
+
+.coffee-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(2);
+    opacity: 0;
+  }
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Adjusted padding */
+  margin-bottom: 20px; /* Added margin-bottom to create space between nav and hero section */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* About Us section styles */
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: white;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1; /* Adjusted to make the image larger */
+}
+
+.about-image img {
+  width: 100%;
+  height: 300px; /* Set a specific height for the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.about-text {
+  flex: 1; /* Adjusted to make the text area smaller */
+  padding-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Featured Products section styles */
+.featured-products {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between product items */
+}
+
+.product-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(50% - 10px); /* Adjust width to fit 2 items per row with gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 350px; /* Decrease the height for a smaller image */
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-details p {
+  margin: 10px 0;
+}
+
+.product-details .price {
+  font-size: 1.2rem;
+  color: #e07a5f;
+}
+
+/* Subscription Plans section styles */
+.subscription-service {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.subscription-service h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.plan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between plan items */
+}
+
+.plan-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(50% - 10px); /* Adjust width to fit 2 items per row with gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.plan-details {
+  padding: 20px;
+}
+
+.plan-details h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.plan-details p {
+  margin: 10px 0;
+}
+
+.plan-details .price {
+  font-size: 1.2rem;
+  color: #e07a5f;
+}
+
+/* Contact Us section styles */
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: white;
+}
+
+.contact-form {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 2px;;
+}
+
+.contact-form textarea {
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.contact-form button {
+  background-color: #e07a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-location {
+  flex: 1;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.contact-location iframe {
+  width: 100%;
+  height: 90%;
+  border: 0;
+}
+
+/* Main sections */
+.testimonials,
+.blog-section,
+.contact-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links,
+.newsletter-signup,
+.social-media {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links a,
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  background-color: #e07a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .about-image img {
+    height: auto; /* Allow the image height to adjust */
+  }
+
+  .about-text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .product-item,
+  .plan-item {
+    width: calc(100% - 10px); /* Full width for smaller screens */
+  }
+}
+
+/* Assuming you include Font Awesome's CSS link in your HTML */
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links,
+.newsletter-signup,
+.social-media {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-links a,
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  background-color: #e07a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-links,
+  .newsletter-signup,
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a,
+  .social-media a {
+    margin: 5px;
+  }
+}
+
+/* Keyframes for the animation */
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px); /* Adjust distance to move */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px); /* Adjust distance to move */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply animation to the hero image */
+.hero-image {
+  position: relative;
+  max-width: 50%;
+  text-align: right;
+  animation: moveLeft 2s infinite alternate; /* Adjust duration and iteration as needed */
+}
+
+/* Optional: Apply animation to move right */
+.hero-image.move-right {
+  animation-name: moveRight;
+}
+
+.hover-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust line height */
+  background-color: black; /* Adjust line color */
+  transition: width 0.3s ease; /* Smooth transition */
+}
